@@ -1,0 +1,32 @@
+label {
+  display: block; // Hace que el label ocupe toda la línea
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 4px; // Espacio debajo del label
+
+  &.is-required {
+    font-weight: bold;
+  }
+}
+
+.required-star {
+  color: red;
+  margin-left: 4px;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.medium {
+  font-size: 14px;
+}
+
+.large {
+  font-size: 18px;
+}
+
+.required-star {
+  color: red;
+  margin-left: 4px;
+}

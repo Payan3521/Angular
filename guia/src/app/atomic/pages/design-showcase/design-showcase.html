@@ -1,0 +1,79 @@
+<h2>Buttons Showcase</h2>
+
+<div class="button-grid">
+
+  <app-button
+    label="Primary"
+    type="primary"
+    (onClick)="handleButtonClick('Primary')"
+  ></app-button>
+
+  <app-button
+    label="Secondary"
+    type="secondary"
+    (onClick)="handleButtonClick('Secondary')"
+  ></app-button>
+
+  <app-button
+    label="Danger"
+    type="danger"
+    (onClick)="handleButtonClick('Danger')"
+  ></app-button>
+
+  <app-button
+    label="Disabled"
+    type="primary"
+    [disabled]="true"
+  ></app-button>
+
+  <app-input
+    id="nameInput"
+    [(value)]="inputValue"
+    placeholder="Escribe algo..."
+  ></app-input>
+
+  <p>Valor actual: {{ inputValue }}</p>
+
+
+  <app-label
+    label="Nombre"
+    forId="nameInput"
+    [required]="false"
+    size="large"
+  ></app-label>
+
+  <app-form-field
+    label="Correo Electrónico"
+    id="emailInput"
+    [required]="true"
+    [(value)]="email"
+    placeholder="Ingresa tu correo electrónico"
+  ></app-form-field>
+
+  <app-form-field
+    label="Contraseña"
+    id="passwordInput"
+    [required]="true"
+    [(value)]="password"
+    placeholder="Ingresa tu contraseña"
+    type="password"
+  ></app-form-field>
+
+  <p>Correo ingresado: {{ email }}</p>
+  <p>Contraseña ingresada: {{ password }}</p>
+
+
+  <h2>Login Card Preview</h2>
+  <app-login-card
+    [email]="email"
+    [password]="password"
+    (login)="handleLogin($event)"
+  ></app-login-card>
+
+  <p>Email: {{ email }}</p>
+  <p>Password: {{ password }}</p>
+
+  <app-login-page-template
+  (login)="handleLogin($event)"
+></app-login-page-template>
+</div>

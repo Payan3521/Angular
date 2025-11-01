@@ -1,0 +1,41 @@
+// Estilos base para todos los botones
+button {
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+// Estilos específicos para el tipo 'primary'
+.primary {
+  background-color: blue;
+  color: white;
+  &:hover {
+    background-color: darkblue;
+  }
+}
+
+// Estilos específicos para el tipo 'secondary'
+.secondary {
+  background-color: white;
+  color: blue;
+  border-color: blue;
+  &:hover {
+    background-color: lightblue;
+  }
+}
+
+// Estilos específicos para el tipo 'danger'
+.danger {
+  background-color: red;
+  color: white;
+  &:hover {
+    background-color: darkred;
+  }
+}

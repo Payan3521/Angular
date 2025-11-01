@@ -1,0 +1,26 @@
+<div class="login-card">
+    <h2 class="title">LOGIN</h2>
+
+    <app-form-field
+        label="Correo Electrónico"
+        id="emailInput"
+        [required]="true"
+        placeholder="Ingresa tu correo"
+        [(value)]="email"
+    ></app-form-field>
+
+    <app-form-field
+        label="Contraseña"
+        id="passwordInput"
+        [required]="true"
+        placeholder="Ingresa tu contraseña"
+        type="password"
+        [(value)]="password"
+    ></app-form-field>
+
+    <app-button
+        label="Iniciar sesión"
+        type="primary"
+        (onClick)="onLoginClick()"
+    ></app-button>
+</div>
